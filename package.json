@@ -42,7 +42,9 @@
     "clean": "run-s clean:min clean:umd",
     "clean:min": "rimraf min",
     "clean:umd": "rimraf umd",
-    "test": "jest"
+    "test": "jest",
+    "prepublish": "run-s test build",
+    "postversion": "git push --follow-tags"
   },
   "unpkg": "min/index.min.js"
 }
