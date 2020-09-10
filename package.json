@@ -46,5 +46,5 @@
     "prepublishOnly": "run-s test build",
     "postversion": "git push --follow-tags"
   },
-  "unpkg": "min/index.min.js"
+  "unpkg": "min/index.js"
 }
