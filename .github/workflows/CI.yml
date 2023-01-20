@@ -59,7 +59,7 @@ jobs:
         run: pnpm build
 
       - name: Test
-        run: pnpm test --ci --coverage
+        run: pnpm test -- --ci --coverage
         env:
           CI: true 
 
